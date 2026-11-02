@@ -9,6 +9,7 @@
 </head>
 
 <body>
+
     <nav>
         <a href="#about">About</a>
         <a href="#projects">Projects</a>
@@ -19,129 +20,256 @@
 
     <header>
         <h1>Jana Aburas</h1>
-        <p>Computer Systems Engineering student at Carleton University</p>
+        <h2>Computer Systems Engineering Student</h2>
+
+        <p>
+            Third-year Computer Systems Engineering student at Carleton University,
+            interested in software development, embedded systems, and electronics.
+        </p>
+
+
+
+        <a href="#projects">View Projects</a>
+        <a href="Software_Co_op.pdf" target="_blank">Resume</a>
     </header>
 
-    <section id="about">
-        <h2>About</h2>
-        <p>Third-year Computer Systems Engineering (Co-op) student at Carleton, interested in both hardware and
-            software. Looking for a Winter 2027 co-op!</p>
-        <a href="https://github.com/Jaburas" target="_blank">GitHub</a>
-        <a href="https://linkedin.com/in/jana-aburas" target="_blank">LinkedIn</a>
-        <a href="Software_Co_op.pdf" target="_blank">Resume</a>
-    </section>
+<section id="about">
+    <h2>About</h2>
+
+    <p>
+        I'm a third-year Computer Systems Engineering (Co-op) student at
+        Carleton University, interested in software development, embedded
+        systems, and electronics.
+    </p>
+
+<p>
+    I'm an incoming Software Development Co-op Student with
+    <span class="redacted">REDACTED</span>, beginning January 2027.
+</p>
+
+    <p>
+        Outside of academics, I'm an Upper-Year Representative with
+        SCESoc and enjoy working on personal projects involving
+        software, hardware, and electronics.
+    </p>
+
+    <a href="https://github.com/Jaburas" target="_blank">GitHub</a>
+    <a href="https://linkedin.com/in/jana-aburas" target="_blank">LinkedIn</a>
+    <a href="Software_Co_op.pdf" target="_blank">Resume</a>
+</section>
 
     <section id="projects">
         <h2>Projects</h2>
-
+    
         <article class="project">
             <h3>Ottawa Pathfinder</h3>
-            <p>An interactive pathfinding visualizer built on real Ottawa road data. Click a start and target point on
-                the map, pick an algorithm, and watch the search expand across actual streets and intersections before
-                tracing the final route.</p>
+    
+            <ul>
+                <li>Built a React and TypeScript route planner over 80,000+ Ottawa intersections from OpenStreetMap.</li>
+                <li>Implemented Dijkstra's algorithm with a custom binary min-heap, plus BFS and DFS.</li>
+                <li>Used Haversine distance to snap clicked map points to their nearest intersections.</li>
+            </ul>
+    
             <ul class="tags">
                 <li>React</li>
                 <li>TypeScript</li>
                 <li>OpenStreetMap</li>
-                <li>Overpass API</li>
             </ul>
-            <a href="https://jaburas.github.io/ottawa-pathfinder/" target="_blank">Live demo</a>
+    
+            <a href="https://jaburas.github.io/ottawa-pathfinder/" target="_blank">Live Demo</a>
         </article>
-
+    
         <article class="project">
             <h3>ScamFree</h3>
-            <p>A Chrome extension and Node.js backend, built at a hackathon, that flags likely scam emails right inside
-                Gmail. It uses a Naive Bayes classifier trained on 500 labeled emails.</p>
+    
+            <ul>
+                <li>Built a Chrome extension with Node.js REST endpoints to detect phishing emails in Gmail.</li>
+                <li>Trained a Naive Bayes classifier on 500 labeled emails.</li>
+                <li>Improved classification accuracy by debugging false positives.</li>
+            </ul>
+    
             <ul class="tags">
                 <li>JavaScript</li>
                 <li>Node.js</li>
-                <li>HTML/CSS</li>
-                <li>Chrome Extension API</li>
+                <li>REST APIs</li>
             </ul>
+    
             <a href="https://github.com/Jaburas/ScamFree" target="_blank">View on GitHub</a>
         </article>
-
+    
+        <article class="project">
+            <h3>Community Chat Bot Platform</h3>
+    
+            <ul>
+                <li>Developed a self-hosted Python LLM chatbot serving 3,400+ community members.</li>
+                <li>Maintained three months of uptime by resolving reconnection and API rate-limit issues.</li>
+                <li>Developed object-oriented game bots supporting multiple concurrent games.</li>
+            </ul>
+    
+            <ul class="tags">
+                <li>Python</li>
+                <li>Ollama</li>
+                <li>Linux</li>
+            </ul>
+        </article>
+    
         <article class="project">
             <h3>Job Posting Scraper</h3>
-            <p>A Python scraper that runs every 24 hours on GitHub Actions, parsing about 30 new LinkedIn postings a day
-                into a CSV. It filters by job title and location, and saves me 1–2 hours of searching a day.</p>
+    
+            <ul>
+                <li>Automated collection of approximately 30 LinkedIn job postings daily using Python.</li>
+                <li>Scheduled execution every 24 hours using GitHub Actions.</li>
+                <li>Filtered postings by job title, location, and posting date.</li>
+            </ul>
+    
             <ul class="tags">
                 <li>Python</li>
                 <li>GitHub Actions</li>
                 <li>CSV</li>
             </ul>
+    
             <a href="https://github.com/Jaburas/Job-Posting-Scraper" target="_blank">View on GitHub</a>
+        </article>
+    
+        <article class="project">
+            <h3>Home Server</h3>
+    
+            <ul>
+                <li>Deployed Jellyfin and Immich using Docker Compose on Ubuntu.</li>
+                <li>Configured remote access using Tailscale.</li>
+                <li>Implemented AdGuard Home for network-wide DNS filtering across 12 devices.</li>
+                <li>Improved wired network speeds from 80 Mbps to 900 Mbps.</li>
+            </ul>
+    
+            <ul class="tags">
+                <li>Ubuntu</li>
+                <li>Docker Compose</li>
+                <li>Tailscale</li>
+                <li>AdGuard Home</li>
+            </ul>
         </article>
     </section>
 
-    <section id="skills">
-        <h2>Skills</h2>
+<section id="skills">
+    <h2>Skills</h2>
 
-        <div class="skill-group">
-            <h3>Languages</h3>
-            <ul class="tags">
-                <li>Python</li>
-                <li>C++</li>
-                <li>TypeScript</li>
-                <li>Java</li>
-                <li>HTML/CSS</li>
-            </ul>
-        </div>
+    <div class="skill-group">
+        <h3>Languages</h3>
 
-        <div class="skill-group">
-            <h3>Systems &amp; Tools</h3>
-            <ul class="tags">
-                <li>Linux</li>
-                <li>GitHub</li>
-                <li>Docker Compose</li>
-                <li>gdb</li>
-                <li>Jira</li>
-                <li>Agile/Scrum</li>
-            </ul>
-        </div>
+        <ul class="tags">
+            <li>TypeScript</li>
+            <li>JavaScript</li>
+            <li>Python</li>
+            <li>Java</li>
+            <li>C++</li>
+            <li>C</li>
+            <li>SQL</li>
+            <li>Bash</li>
+            <li>HTML/CSS</li>
+        </ul>
+    </div>
 
-        <div class="skill-group">
-            <h3>Libraries</h3>
-            <ul class="tags">
-                <li>React</li>
-                <li>Node.js</li>
-                <li>JUnit</li>
-                <li>SQLite</li>
-                <li>Pandas</li>
-                <li>NumPy</li>
-                <li>Chrome Extension API</li>
-            </ul>
-        </div>
-    </section>
+    <div class="skill-group">
+        <h3>Systems & Tools</h3>
+
+        <ul class="tags">
+            <li>Linux</li>
+            <li>Git</li>
+            <li>GitHub Actions</li>
+            <li>GitLab</li>
+            <li>Docker Compose</li>
+            <li>gdb</li>
+            <li>Jira</li>
+            <li>Agile/Scrum</li>
+        </ul>
+    </div>
+
+    <div class="skill-group">
+        <h3>Libraries & Frameworks</h3>
+
+        <ul class="tags">
+            <li>React</li>
+            <li>Node.js</li>
+            <li>REST APIs</li>
+            <li>pytest</li>
+            <li>JUnit</li>
+            <li>SQLite</li>
+            <li>Pandas</li>
+            <li>NumPy</li>
+            <li>Chrome Extension API</li>
+        </ul>
+    </div>
+</section>
 
     <section id="experience">
-        <h2>Experience</h2>
+        <h2>Experience & Involvement</h2>
 
+
+        <article class="job">
+            <h3>Incoming Software Development Co-op Student</h3>
+            <p class="meta">
+                <span class="redacted">REDACTED</span> · Starting January 4, 2027
+            </p>
+            <p>
+                Upcoming software development work term.
+            </p>
+        </article>
+
+        
+    
         <article class="job">
             <h3>Makerspace Facilitator</h3>
             <p class="meta">Carleton University · Sept 2026 – Present</p>
-            <p>Train students on the electronics benches, 3D printers and laser cutters, and review their CAD files.</p>
-        </article>
+    
+            <ul>
 
+            </ul>
+        </article>
+    
         <article class="job">
             <h3>Electronics Repair Technician</h3>
             <p class="meta">Self-Employed · May 2025 – Present</p>
-            <p>Restored 70+ phones, consoles and controllers, including board-level soldering.</p>
+    
+            <ul>
+                <li>Restored 70+ phones, consoles, and controllers.</li>
+                <li>Performed board-level soldering and component replacements.</li>
+                <li>Diagnosed hardware faults and verified repairs through testing.</li>
+            </ul>
         </article>
-
+    
+        <article class="job">
+            <h3>Upper-Year Representative</h3>
+            <p class="meta">SCESoc · Carleton University</p>
+    
+            <p>
+                Upper-Year Representative with the Systems and Computer
+                Engineering Society (SCESoc).
+            </p>
+        </article>
+    
         <article class="job">
             <h3>Student Design Teams</h3>
             <p class="meta">Carleton University</p>
-            <p>Carleton Planetary Robotics (Software) and Autonomous Robotics Carleton (Software, Electrical).</p>
+    
+            <p>
+                Carleton Planetary Robotics (Software) and
+                Autonomous Robotics Carleton (Software, Electrical).
+            </p>
         </article>
     </section>
 
     <section id="contact">
         <h2>Contact</h2>
-        <p>I'm looking for a Winter 2027 co-op. Email is the best way to reach me.</p>
         <a href="mailto:jaburas01@gmail.com">jaburas01@gmail.com</a>
         <a href="https://github.com/Jaburas" target="_blank">GitHub</a>
         <a href="https://linkedin.com/in/jana-aburas" target="_blank">LinkedIn</a>
+    </section>
+
+
+    <section id="certifications">
+        <h2>Certifications</h2>
+    
+        <p>Basic First Aid & CPR/AED Certified</p>
     </section>
 
     <footer>
