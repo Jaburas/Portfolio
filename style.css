@@ -1,6 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;600;700;800;900&family=Inter:wght@400;500;600;700&display=swap');
 
 
+
+
+
 html {
     scroll-behavior: smooth;
 }
@@ -24,6 +27,20 @@ h3 {
 }
 
 
+.nav-links {
+    display: flex;
+    gap: 35px;
+    align-items: center;
+}
+
+.menu-toggle {
+    display: none;
+    background: none;
+    border: none;
+    font-size: 30px;
+    cursor: pointer;
+    color: #171717;
+}
 
 nav {
     display: flex;
@@ -381,5 +398,45 @@ footer p {
     font-size: 14px;
 }
 
+@media (max-width: 768px) {
 
+    nav {
+        flex-direction: column;
+        align-items: stretch;
+        padding: 15px 6%;
+    }
 
+    .menu-toggle {
+        display: block;
+        align-self: flex-end;
+    }
+
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        padding: 20px 0;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    header h1 {
+        font-size: clamp(36px, 10vw, 52px);
+        overflow-wrap: anywhere;
+    }
+
+    #projects {
+        grid-template-columns: 1fr;
+    }
+
+    #skills {
+        grid-template-columns: 1fr;
+    }
+
+    .project:last-child {
+        grid-column: auto;
+    }
+}
